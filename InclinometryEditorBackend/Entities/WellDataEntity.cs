@@ -7,7 +7,7 @@ namespace InclinometryEditorBackend.Entities
     {
         public Guid Id { get; set; }
         public int UserId { get; set; }
-        public int WellEntityId { get; set; }
+        public Guid WellEntityId { get; set; }
         public int Num {  get; set; }
         public double MD { get; set; }
         public double Inclination {  get; set; }
@@ -19,6 +19,6 @@ namespace InclinometryEditorBackend.Entities
         public double Z { get; set; }
         public double Y { get; set; }
         public double X { get; set; }
-        public WellEntity? WellData { get; set; }
+        public WellEntity? WellEntity { get; set; }
     }
 }

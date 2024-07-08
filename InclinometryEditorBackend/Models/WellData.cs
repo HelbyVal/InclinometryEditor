@@ -1,12 +1,14 @@
 ﻿using InclinometryEditorBackend.Entities;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using System.Diagnostics.Eventing.Reader;
+using System.Numerics;
 
 namespace InclinometryEditorBackend.Models
 {
     public class WellData
     {
         public int UserId { get; }
+        public Guid WellId { get; }
         public Guid Id { get; }
         public int Num { get; } 
         public double MD { get; }
@@ -21,6 +23,7 @@ namespace InclinometryEditorBackend.Models
         public double X { get; }
 
         public WellData(Guid Id,
+                        Guid WellId,
                         int UserId,
                         int Num,
                         double MD,
@@ -49,8 +52,23 @@ namespace InclinometryEditorBackend.Models
             this.X = X;
         }
 
-        public static WellData Create(double Inclination, double Azimut, double Md)
+        public static WellData CreateFirst(int userId, Guid wellId)
         {
+            return new WellData(Guid.NewGuid(), wellId, userId, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        }
+
+        public static WellData Create(int userId, int num, Guid wellId ,double Inclination, double Azimut, double Md, WellData? prevWellData)
+        {
+            double Z = Math.Cos(Inclination);
+            double Y = Math.Sin(Inclination) * Math.Cos(Azimut);
+            double X = Math.Sin(Inclination) * Math.Sin(Azimut);
+
+
+            
+
+            
+
+
             return null;
         }
 

@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellController",
+    "Method": "AddWell",
+    "RelativePath": "AddWell",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "InclinometryEditorBackend.Contracts.WellRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
