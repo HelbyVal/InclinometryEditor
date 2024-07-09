@@ -14,5 +14,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellDataController",
+    "Method": "AddWellData",
+    "RelativePath": "AddWellData",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "InclinometryEditorBackend.Contracts.WellDataRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

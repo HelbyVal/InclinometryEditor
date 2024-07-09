@@ -35,6 +35,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-new InclinometryDBContext().Database.EnsureCreated();
+var db = new InclinometryDBContext();
+db.Database.EnsureDeleted();
+db.Database.EnsureCreated();
 
 app.Run();
