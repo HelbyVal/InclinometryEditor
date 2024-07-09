@@ -4,6 +4,6 @@
         Guid Id,
         string Title,
         string Discription,
-        string CreateDate
+        DateOnly CreateDate
     );
 }

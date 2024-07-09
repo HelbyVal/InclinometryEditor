@@ -114,6 +114,17 @@ namespace InclinometryEditorBackend.Repositories
                 return wellData;
             }
         }
+
+        internal async Task<Guid> DeleteLast(int userId, Guid wellId)
+        {
+            using (var _dbContext = new InclinometryDBContext())
+            {
+                await _dbContext.WellDatas.Where(x => x.Id == wellId && x.UserId == userId)
+                                          .TakeLast(1)
+                                          .ExecuteDeleteAsync();
+                return wellId;
+            }
+        }
     }
 
 }

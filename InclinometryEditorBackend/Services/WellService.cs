@@ -34,5 +34,20 @@ namespace InclinometryEditorBackend.Services
             return res;
 
         }
+
+        public async Task<List<Well>> GetWells(int userId)
+        {
+            return await _wellRepository.Get(userId);
+        }
+
+        internal async Task<Guid> DeleteWell(int userId, Guid wellId)
+        {
+            return await _wellRepository.Delete(wellId, userId);
+        }
+
+        internal async Task<Well> UpdateWell(int userId, Guid wellId, string title, string discription, DateOnly createDate)
+        {
+            return await _wellRepository.Update(wellId, title, discription, createDate, userId);
+        }
     }
 }

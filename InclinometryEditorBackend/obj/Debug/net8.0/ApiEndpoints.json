@@ -13,7 +13,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "InclinometryEditorBackend.Contracts.WellResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "InclinometryEditorBackend.Controllers.WellDataController",
@@ -30,5 +40,56 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellController",
+    "Method": "GetWells",
+    "RelativePath": "GetWells",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[InclinometryEditorBackend.Contracts.WellResponse, InclinometryEditorBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellController",
+    "Method": "UpdateWell",
+    "RelativePath": "UpdateWell",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wellId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "InclinometryEditorBackend.Contracts.WellRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "InclinometryEditorBackend.Contracts.WellResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

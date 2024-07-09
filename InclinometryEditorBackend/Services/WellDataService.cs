@@ -18,5 +18,15 @@ namespace InclinometryEditorBackend.Services
             return await _wellDataRepository.Add(newWellData);
 
         }
+
+        internal async Task<Guid> DeleteLastData(int userId, Guid wellId)
+        {
+            return await _wellDataRepository.DeleteLast(userId, wellId);
+        }
+
+        internal async Task<List<WellData>> GetWellData(int userId, Guid wellId)
+        {
+            return await _wellDataRepository.Get(wellId, userId);
+        }
     }
 }
