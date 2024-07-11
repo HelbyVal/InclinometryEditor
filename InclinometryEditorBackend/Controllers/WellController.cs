@@ -12,9 +12,9 @@ namespace InclinometryEditorBackend.Controllers
         const int USER_ID = 1;
         WellService _wellService = new WellService();
         [HttpPost("AddWell")]
-        public async Task<IActionResult> AddWell([FromBody] WellRequest request)
+        public async Task<IActionResult> AddWell(string title, string description, DateOnly createDate)
         {
-            var result = await _wellService.AddWell(USER_ID, request.Discription, request.Title, request.CreateDate);
+            var result = await _wellService.AddWell(USER_ID, description, title, createDate);
 
             var response = new WellResponse(result.Id, result.Title, result.Description, result.CreateDate);
 
@@ -31,11 +31,11 @@ namespace InclinometryEditorBackend.Controllers
         }
 
         [HttpPatch("UpdateWell")]
-        public async Task<IActionResult> UpdateWell(Guid wellId, [FromBody] WellRequest request)
+        public async Task<IActionResult> UpdateWell(Guid wellId, string title, string description, DateOnly createDate)
         {
-            var result = await _wellService.UpdateWell(USER_ID, wellId, request.Title,
-                                                                             request.Discription,
-                                                                             request.CreateDate);
+            var result = await _wellService.UpdateWell(USER_ID, wellId, title,
+                                                                        description,
+                                                                        createDate);
             var response = new WellResponse(result.Id, result.Title, result.Description, result.CreateDate);
 
             return Ok(response);

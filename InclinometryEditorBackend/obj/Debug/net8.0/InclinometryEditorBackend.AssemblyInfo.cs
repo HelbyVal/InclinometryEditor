@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InclinometryEditorBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12b0fb836f3c15e119a46e7768f4b4f8eebfc7af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d3534ae299718cf9257e0438a453e79afa81dab")]
 [assembly: System.Reflection.AssemblyProductAttribute("InclinometryEditorBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InclinometryEditorBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

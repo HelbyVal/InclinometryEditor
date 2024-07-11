@@ -36,6 +36,13 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.UseCors( x=>
+{
+    x.WithHeaders().AllowAnyHeader();
+    x.WithOrigins("http://localhost:3000");
+    x.WithMethods().AllowAnyMethod();
+});
+
 var db = new InclinometryDBContext();
 db.Database.EnsureDeleted();
 db.Database.EnsureCreated();

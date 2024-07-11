@@ -8,28 +8,28 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "InclinometryEditorBackend.Contracts.WellRequest",
-        "IsRequired": true
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "createDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "InclinometryEditorBackend.Contracts.WellResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "InclinometryEditorBackend.Controllers.WellDataController",
     "Method": "AddWellData",
     "RelativePath": "AddWellData",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -37,6 +37,54 @@
         "Name": "request",
         "Type": "InclinometryEditorBackend.Contracts.WellDataRequest",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellController",
+    "Method": "DeleteWell",
+    "RelativePath": "DeleteWell",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wellId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellDataController",
+    "Method": "DeleteWellData",
+    "RelativePath": "DeleteWellData",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wellId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InclinometryEditorBackend.Controllers.WellDataController",
+    "Method": "GetWellData",
+    "RelativePath": "GetWellData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "wellId",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -75,21 +123,21 @@
         "IsRequired": false
       },
       {
-        "Name": "request",
-        "Type": "InclinometryEditorBackend.Contracts.WellRequest",
-        "IsRequired": true
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "createDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "InclinometryEditorBackend.Contracts.WellResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

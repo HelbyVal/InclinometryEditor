@@ -3,7 +3,7 @@
     public record WellResponse (
         Guid Id,
         string Title,
-        string Discription,
+        string Description,
         DateOnly CreateDate
     );
 }

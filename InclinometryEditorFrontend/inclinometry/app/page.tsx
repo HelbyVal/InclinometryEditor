@@ -1,95 +1,123 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import dayjs, { Dayjs } from 'dayjs'
+import advancedFormat from 'dayjs/plugin/advancedFormat'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
+import localeData from 'dayjs/plugin/localeData'
+import weekday from 'dayjs/plugin/weekday'
+import weekOfYear from 'dayjs/plugin/weekOfYear'
+import weekYear from 'dayjs/plugin/weekYear'
+
+dayjs.extend(customParseFormat)
+dayjs.extend(advancedFormat)
+dayjs.extend(weekday)
+dayjs.extend(localeData)
+dayjs.extend(weekOfYear)
+dayjs.extend(weekYear)
+
+
+import { useEffect, useState } from "react";
+import { AddWell, DeleteWell, GetWells, UpdateWell, WellRequest } from "./Services/WellService";
+import { Wells } from "./Components/Well";
+import Title from "antd/es/skeleton/Title";
+import { OpenWellForm, Mode } from "./Components/WellForm";
+import Button from "antd/es/button/button"
+import { WellModel } from "./Models/WellModel";
 
 export default function Home() {
+  const defaultWell = {
+    title: "",
+    description: "",
+    createDate: dayjs(new Date().toDateString())
+  } as WellModel
+
+  const [valueWell, setValueWell] = useState<WellModel>(defaultWell);
+
+  const [wells, setWells] = useState<WellModel[]>([])
+  const [loading, setLoading] = useState(true);
+  const [isModalOpenWell, setIsModalOpenWell] = useState(false);
+  const [mode, setMode] = useState(Mode.Create);
+
+  useEffect(() => {
+    const getWells = async () => {
+      const wells = await GetWells();
+      setLoading(false);
+      wells.forEach((el: any) => {
+        el.createDate = dayjs(el.createDate).format("YYYY-MM-DD");
+      });
+      setWells(wells);
+    }
+
+    getWells();
+  }, [])
+
+  const handleCreateWell = async (request: WellRequest) => {
+    await AddWell(request);
+    closeWellForm();
+
+    setWells(await GetWells())
+    console.log(wells);
+  }
+
+  const handleUpdateWell = async (Id: string, request: WellRequest ) => {
+    await UpdateWell(Id, request);
+    closeWellForm();
+
+    setWells(await GetWells());
+  }
+
+  const handleDeleteWell = async (Id: string) => {
+    console.log(Id);
+    await DeleteWell(Id);
+
+    setWells(await GetWells());
+  }
+
+  const openWellForm = () => {
+    setMode(Mode.Create);
+    setIsModalOpenWell(true);
+  }
+
+  const closeWellForm = () => {
+    setIsModalOpenWell(false);
+    setValueWell(defaultWell);
+  }
+
+  const openModalWellEdit = (Id: string, well: WellModel) => {
+
+    let w = dayjs("2023-05-05").format("YYYY-MM-DD");
+    let s = well;
+    setMode(Mode.Edit);
+    setValueWell(well);
+    setIsModalOpenWell(true);
+
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div>
+      <Button
+        type = "primary"
+        style = {{marginTop: "30px"}}
+        size = "large"
+        onClick = {openWellForm}
+      >
+        Добавить скважину
+      </Button>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <OpenWellForm
+        mode = {mode}
+        value={valueWell}
+        isModalOpen = {isModalOpenWell}
+        handleCancel={closeWellForm}
+        handleCreate={handleCreateWell}
+        handleUpdate={handleUpdateWell}
+      />
+
+      {loading ? ( <Title>Loading</Title> ) : ( <Wells
+        wells = {wells}
+        handleDelete={handleDeleteWell}
+        handleOpen={openModalWellEdit}
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        )}
+    </div>
   );
 }

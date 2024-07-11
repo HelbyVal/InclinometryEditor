@@ -2,7 +2,7 @@
 {
     public record WellRequest(
         string Title,
-        string Discription,
+        string Description,
         DateOnly CreateDate
     );
 }
