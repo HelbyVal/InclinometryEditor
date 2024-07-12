@@ -10,9 +10,9 @@ namespace InclinometryEditorBackend.Controllers
         WellDataService _wellDataService = new WellDataService();
 
         [HttpPost("AddWellData")]
-        public async Task<IActionResult> AddWellData([FromBody] WellDataRequest request)
+        public async Task<IActionResult> AddWellData(Guid wellId, double inclination, double azimut, double md)
         {
-            var result = await _wellDataService.AddWellData(USER_ID, request.WellId, request.Inclination, request.Azimut, request.Md);
+            var result = await _wellDataService.AddWellData(USER_ID, wellId, inclination, azimut, md);
 
             var response = result.ToResponse();
 

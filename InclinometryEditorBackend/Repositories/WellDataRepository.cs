@@ -119,9 +119,10 @@ namespace InclinometryEditorBackend.Repositories
         {
             using (var _dbContext = new InclinometryDBContext())
             {
-                await _dbContext.WellDatas.Where(x => x.Id == wellId && x.UserId == userId)
-                                          .TakeLast(1)
-                                          .ExecuteDeleteAsync();
+                var res = await _dbContext.WellDatas.Where(x => x.WellEntityId == wellId && x.UserId == userId).OrderBy(x => x.Num).LastOrDefaultAsync();
+                _dbContext.WellDatas.Remove(res);
+                _dbContext.SaveChanges();
+                                          
                 return wellId;
             }
         }

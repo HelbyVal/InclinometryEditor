@@ -34,9 +34,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "InclinometryEditorBackend.Contracts.WellDataRequest",
-        "IsRequired": true
+        "Name": "wellId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "inclination",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "azimut",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "md",
+        "Type": "System.Double",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
