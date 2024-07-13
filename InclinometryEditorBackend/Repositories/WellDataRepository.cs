@@ -35,6 +35,7 @@ namespace InclinometryEditorBackend.Repositories
                         x.Z,
                         x.Y,
                         x.X))
+                    .OrderBy(x => x.Num)
                     .ToList();
 
                 return result;

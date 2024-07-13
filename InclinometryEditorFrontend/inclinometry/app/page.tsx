@@ -14,7 +14,7 @@ dayjs.extend(localeData)
 dayjs.extend(weekOfYear)
 dayjs.extend(weekYear)
 
-
+import Chart from 'chart.js/auto';
 import { useEffect, useState } from "react";
 import { AddWell, DeleteWell, GetWells, UpdateWell, WellRequest } from "./Services/WellService";
 import { Wells } from "./Components/Well";
@@ -26,7 +26,12 @@ import { WellDataModel, defaultData } from './Models/WellDataModel';
 import { AddWellData, GetWellData, WellDataRequest, DeleteWellData } from './Services/WellDataService';
 import { WellDataTable } from './Components/WellDataTable';
 import { WellDataForm } from './Components/WellDataForm';
-import { CloseOutlined, PlusOutlined } from '@ant-design/icons';
+import { CloseOutlined, PlusOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
+import { Line, Scatter } from 'react-chartjs-2';
+import { ChartMode, MyChart } from './Components/Chart';
+import Segmented from 'antd/es/segmented';
+import { Slider, SliderSingleProps } from 'antd';
+
 
 export default function Home() {
   const defaultWell = {
@@ -45,6 +50,9 @@ export default function Home() {
   const [wellData, setWellData] = useState<WellDataModel[]>([]);
   const [activeWell, setActiveWell] = useState<WellModel>(defaultWell);
   const [isModalOpenData, setModalOpenData] = useState<boolean>(false);
+
+  const [chartMode, setChartMode] = useState<ChartMode>(ChartMode.Vertical);
+  const [chartScale, setChartScale] = useState<number>(100);
 
   useEffect(() => {
     const getWells = async () => {
@@ -74,8 +82,6 @@ export default function Home() {
     closeWellForm();
 
     setWells(await GetWells());
-    setActiveWell(defaultWell);
-    setWellData([defaultData]);
   }
 
   const handleDeleteWell = async (Id: string) => {
@@ -83,7 +89,10 @@ export default function Home() {
     await DeleteWell(Id);
 
     setWells(await GetWells());
-    setActiveWell(defaultWell);
+    if (activeWell.id == Id) {
+      setActiveWell(defaultWell);
+      setWellData([]);
+    }
   }
 
   const handleActivateWell = async (well: WellModel) => {
@@ -125,10 +134,6 @@ export default function Home() {
     setWellData(await GetWellData(activeWell.id));
   }
 
-  //const DelWellData = async () => {
-  //  handleDeleteWellData(activeWell.id)
-  //}
-
   const OpenWellDataForm = () => {
     setModalOpenData(true);
   }
@@ -136,6 +141,8 @@ export default function Home() {
   const closeDataForm = () => {
     setModalOpenData(false);
   }
+
+  const formatter: NonNullable<SliderSingleProps['tooltip']>['formatter'] = (value) => `${value}%`;
 
   return (
     <div>
@@ -183,6 +190,33 @@ export default function Home() {
         handleCancel={closeDataForm}
         handleCreate={handleCreateWellData}
       />
+
+      <Segmented
+        options={['Вертикальное представление', 'Горизонтальное представление']}
+        onChange={(value: string) => {
+          if (value == 'Вертикальное представление') {
+            setChartMode(ChartMode.Vertical);
+          }
+          else if (value == 'Горизонтальное представление') {
+            setChartMode(ChartMode.Horizontal);
+          }
+        }}
+      />
+
+      <MyChart
+        wellData={wellData}
+        mode={chartMode}
+        scale={chartScale}
+      />
+
+      <ZoomOutOutlined />
+      <Slider
+        tooltip = {{ formatter }}
+        onChange = {(value: number) => {
+          setChartScale(value)
+        }}   
+      />
+      <ZoomInOutlined />
     </div>
   );
 }

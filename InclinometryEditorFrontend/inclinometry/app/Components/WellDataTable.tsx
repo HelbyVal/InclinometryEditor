@@ -46,10 +46,14 @@ const colums =
             key: 'DLS'
         },
     ]
+    let tlt = "";
+    if (!(well.title == "" || well.title == undefined)) {
+        tlt = "Скважина " + well.title;
+    }
 
     return(
     <div className="Table">
-        <h2>{well.title}</h2>
+        <h2>{tlt}</h2>
         <Table 
             columns = {colums}
             dataSource = {wellData}

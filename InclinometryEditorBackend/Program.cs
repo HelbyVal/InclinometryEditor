@@ -43,8 +43,8 @@ app.UseCors( x=>
     x.WithMethods().AllowAnyMethod();
 });
 
-var db = new InclinometryDBContext();
-db.Database.EnsureDeleted();
-db.Database.EnsureCreated();
+//var db = new InclinometryDBContext();
+//db.Database.EnsureDeleted();
+//db.Database.EnsureCreated();
 
 app.Run();
