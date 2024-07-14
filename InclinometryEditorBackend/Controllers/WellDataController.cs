@@ -1,9 +1,11 @@
 ﻿using InclinometryEditorBackend.Contracts;
 using InclinometryEditorBackend.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InclinometryEditorBackend.Controllers
 {
+    [Authorize]
     public class WellDataController : Controller
     {
         const int USER_ID = 1;

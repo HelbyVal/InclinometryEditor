@@ -49,3 +49,7 @@ C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEd
 C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\obj\Debug\net8.0\InclinometryEditorBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Keycloak.AuthServices.Authentication.dll
+C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Keycloak.AuthServices.Common.dll
+C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Пользователь\source\repos\InclinometryEditor\InclinometryEditorBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

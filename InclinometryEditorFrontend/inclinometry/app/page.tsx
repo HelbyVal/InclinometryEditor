@@ -14,7 +14,7 @@ dayjs.extend(localeData)
 dayjs.extend(weekOfYear)
 dayjs.extend(weekYear)
 
-import Chart from 'chart.js/auto';
+import {useKeycloak} from "@react-keycloak/web";
 import { useEffect, useState } from "react";
 import { AddWell, DeleteWell, GetWells, UpdateWell, WellRequest } from "./Services/WellService";
 import { Wells } from "./Components/Well";
@@ -27,7 +27,6 @@ import { AddWellData, GetWellData, WellDataRequest, DeleteWellData } from './Ser
 import { WellDataTable } from './Components/WellDataTable';
 import { WellDataForm } from './Components/WellDataForm';
 import { CloseOutlined, PlusOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
-import { Line, Scatter } from 'react-chartjs-2';
 import { ChartMode, MyChart } from './Components/Chart';
 import Segmented from 'antd/es/segmented';
 import { Slider, SliderSingleProps } from 'antd';
@@ -54,9 +53,22 @@ export default function Home() {
   const [chartMode, setChartMode] = useState<ChartMode>(ChartMode.Vertical);
   const [chartScale, setChartScale] = useState<number>(100);
 
+  const { keycloak, initialized } = useKeycloak();
+
   useEffect(() => {
+    if (!initialized) {
+      console.log(keycloak.token);
+      
+      return;
+    }
+
+    if (!keycloak.authenticated) {    
+      keycloak.login();
+      
+    } 
+
     const getWells = async () => {
-      const wells = await GetWells();
+      const wells = await GetWells(keycloak.token);
       setLoading(false);
       wells.forEach((el: any) => {
         el.createDate = dayjs(el.createDate).format("YYYY-MM-DD");
@@ -67,28 +79,27 @@ export default function Home() {
     getWells();
 
     setWellData([defaultData]);
-  }, [])
+  }, [keycloak, initialized])
 
   const handleCreateWell = async (request: WellRequest) => {
-    await AddWell(request);
+    await AddWell(request, keycloak.token);
     closeWellForm();
 
-    setWells(await GetWells())
+    setWells(await GetWells(keycloak.token))
     setActiveWell(defaultWell);
   }
 
   const handleUpdateWell = async (Id: string, request: WellRequest ) => {
-    await UpdateWell(Id, request);
+    await UpdateWell(Id, request, keycloak.token);
     closeWellForm();
 
-    setWells(await GetWells());
+    setWells(await GetWells(keycloak.token));
   }
 
   const handleDeleteWell = async (Id: string) => {
-    console.log(Id);
-    await DeleteWell(Id);
+    await DeleteWell(Id, keycloak.token);
 
-    setWells(await GetWells());
+    setWells(await GetWells(keycloak.token));
     if (activeWell.id == Id) {
       setActiveWell(defaultWell);
       setWellData([]);
@@ -96,7 +107,7 @@ export default function Home() {
   }
 
   const handleActivateWell = async (well: WellModel) => {
-    const response = await GetWellData(well.id);
+    const response = await GetWellData(well.id, keycloak.token);
     setWellData(response);
     setActiveWell(well);
   }
@@ -122,16 +133,16 @@ export default function Home() {
   }
 
   const handleCreateWellData = async (well: WellModel, request : WellDataRequest) => {
-    await AddWellData(well.id, request);
+    await AddWellData(well.id, request, keycloak.token);
 
-    setWellData(await GetWellData(well.id));
+    setWellData(await GetWellData(well.id, keycloak.token));
     closeDataForm();
   }
 
   const handleDeleteWellData = async () => {
-    await DeleteWellData(activeWell.id);
+    await DeleteWellData(activeWell.id, keycloak.token);
 
-    setWellData(await GetWellData(activeWell.id));
+    setWellData(await GetWellData(activeWell.id, keycloak.token));
   }
 
   const OpenWellDataForm = () => {
@@ -145,78 +156,82 @@ export default function Home() {
   const formatter: NonNullable<SliderSingleProps['tooltip']>['formatter'] = (value) => `${value}%`;
 
   return (
+
     <div>
-      <Button
-        icon = {<PlusOutlined />}
-        onClick = {openWellForm}
-      />
 
-      <OpenWellForm
-        mode = {mode}
-        value={valueWell}
-        isModalOpen = {isModalOpenWell}
-        handleCancel={closeWellForm}
-        handleCreate={handleCreateWell}
-        handleUpdate={handleUpdateWell}
-      />
-
-      {loading ? ( <Title>Loading</Title> ) : ( <Wells
-        wells = {wells}
-        handleDelete={handleDeleteWell}
-        handleOpen={openModalWellEdit}
-        handleActivate={handleActivateWell}
+      
+        <Button
+          icon = {<PlusOutlined />}
+          onClick = {openWellForm}
         />
-        )}
 
-      <Button
-        icon = {<PlusOutlined />}
-        onClick = {OpenWellDataForm}
-        disabled = {activeWell.id == defaultWell.id}
-      />
-      <Button
-        icon = {<CloseOutlined />}
-        onClick = {handleDeleteWellData}
-        disabled = {activeWell.id == defaultWell.id || wellData.length == 1}
-        danger
-      />
-      <WellDataTable
-        wellData={wellData}
-        well = {activeWell}
-      />
+        <OpenWellForm
+          mode = {mode}
+          value={valueWell}
+          isModalOpen = {isModalOpenWell}
+          handleCancel={closeWellForm}
+          handleCreate={handleCreateWell}
+          handleUpdate={handleUpdateWell}
+        />
 
-      <WellDataForm
-        well={activeWell}
-        isModalOpen= {isModalOpenData}
-        handleCancel={closeDataForm}
-        handleCreate={handleCreateWellData}
-      />
+        {loading ? ( <Title>Loading</Title> ) : ( <Wells
+          wells = {wells}
+          handleDelete={handleDeleteWell}
+          handleOpen={openModalWellEdit}
+          handleActivate={handleActivateWell}
+          />
+          )}
 
-      <Segmented
-        options={['Вертикальное представление', 'Горизонтальное представление']}
-        onChange={(value: string) => {
-          if (value == 'Вертикальное представление') {
-            setChartMode(ChartMode.Vertical);
-          }
-          else if (value == 'Горизонтальное представление') {
-            setChartMode(ChartMode.Horizontal);
-          }
-        }}
-      />
+        <Button
+          icon = {<PlusOutlined />}
+          onClick = {OpenWellDataForm}
+          disabled = {activeWell.id == defaultWell.id}
+        />
+        <Button
+          icon = {<CloseOutlined />}
+          onClick = {handleDeleteWellData}
+          disabled = {activeWell.id == defaultWell.id || wellData.length == 1}
+          danger
+        />
+        <WellDataTable
+          wellData={wellData}
+          well = {activeWell}
+        />
 
-      <MyChart
-        wellData={wellData}
-        mode={chartMode}
-        scale={chartScale}
-      />
+        <WellDataForm
+          well={activeWell}
+          isModalOpen= {isModalOpenData}
+          handleCancel={closeDataForm}
+          handleCreate={handleCreateWellData}
+        />
 
-      <ZoomOutOutlined />
-      <Slider
-        tooltip = {{ formatter }}
-        onChange = {(value: number) => {
-          setChartScale(value)
-        }}   
-      />
-      <ZoomInOutlined />
+        <Segmented
+          options={['Вертикальное представление', 'Горизонтальное представление']}
+          onChange={(value: string) => {
+            if (value == 'Вертикальное представление') {
+              setChartMode(ChartMode.Vertical);
+            }
+            else if (value == 'Горизонтальное представление') {
+              setChartMode(ChartMode.Horizontal);
+            }
+          }}
+        />
+
+        <MyChart
+          wellData={wellData}
+          mode={chartMode}
+          scale={chartScale}
+        />
+
+        <ZoomOutOutlined />
+        <Slider
+          tooltip = {{ formatter }}
+          onChange = {(value: number) => {
+            setChartScale(value)
+          }}   
+        />
+        <ZoomInOutlined />
+
     </div>
   );
 }
