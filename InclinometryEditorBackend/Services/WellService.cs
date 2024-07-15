@@ -15,7 +15,7 @@ namespace InclinometryEditorBackend.Services
         }
 
 
-        public async Task<Well>AddWell(int userId, string discription, string title, DateOnly CreateDate)
+        public async Task<Well>AddWell(string userId, string discription, string title, DateOnly CreateDate)
         {
             Well well = new Well()
             {
@@ -35,17 +35,17 @@ namespace InclinometryEditorBackend.Services
 
         }
 
-        public async Task<List<Well>> GetWells(int userId)
+        public async Task<List<Well>> GetWells(string userId)
         {
             return await _wellRepository.Get(userId);
         }
 
-        internal async Task<Guid> DeleteWell(int userId, Guid wellId)
+        internal async Task<Guid> DeleteWell(string userId, Guid wellId)
         {
             return await _wellRepository.Delete(wellId, userId);
         }
 
-        internal async Task<Well> UpdateWell(int userId, Guid wellId, string title, string discription, DateOnly createDate)
+        internal async Task<Well> UpdateWell(string userId, Guid wellId, string title, string discription, DateOnly createDate)
         {
             return await _wellRepository.Update(wellId, title, discription, createDate, userId);
         }

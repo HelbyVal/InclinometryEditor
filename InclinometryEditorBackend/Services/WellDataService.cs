@@ -9,7 +9,7 @@ namespace InclinometryEditorBackend.Services
         private readonly WellRepository _wellRepository = new WellRepository();
         public WellDataService() { }
 
-        public async Task<WellData> AddWellData(int UserId, Guid WellId, double Inclination, double Azimut, double Md)
+        public async Task<WellData> AddWellData(string UserId, Guid WellId, double Inclination, double Azimut, double Md)
         {
             var prevWellData = await _wellDataRepository.GetLast(WellId, UserId);
 
@@ -19,12 +19,12 @@ namespace InclinometryEditorBackend.Services
 
         }
 
-        internal async Task<Guid> DeleteLastData(int userId, Guid wellId)
+        internal async Task<Guid> DeleteLastData(string userId, Guid wellId)
         {
             return await _wellDataRepository.DeleteLast(userId, wellId);
         }
 
-        internal async Task<List<WellData>> GetWellData(int userId, Guid wellId)
+        internal async Task<List<WellData>> GetWellData(string userId, Guid wellId)
         {
             return await _wellDataRepository.Get(wellId, userId);
         }

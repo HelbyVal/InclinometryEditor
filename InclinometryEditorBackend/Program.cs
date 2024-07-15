@@ -103,8 +103,8 @@ app.MapControllerRoute(
 app.MapControllers();
 
 
-//var db = new InclinometryDBContext();
-//db.Database.EnsureDeleted();
-//db.Database.EnsureCreated();
+var db = new InclinometryDBContext();
+db.Database.EnsureDeleted();
+db.Database.EnsureCreated();
 
 app.Run();

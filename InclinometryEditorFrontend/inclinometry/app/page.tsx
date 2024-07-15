@@ -6,7 +6,8 @@ import localeData from 'dayjs/plugin/localeData'
 import weekday from 'dayjs/plugin/weekday'
 import weekOfYear from 'dayjs/plugin/weekOfYear'
 import weekYear from 'dayjs/plugin/weekYear'
-
+import "./my.css"
+import "./page.module.css"
 dayjs.extend(customParseFormat)
 dayjs.extend(advancedFormat)
 dayjs.extend(weekday)
@@ -157,21 +158,12 @@ export default function Home() {
 
   return (
 
-    <div>
+    <div className = "rowws">
 
       
         <Button
           icon = {<PlusOutlined />}
           onClick = {openWellForm}
-        />
-
-        <OpenWellForm
-          mode = {mode}
-          value={valueWell}
-          isModalOpen = {isModalOpenWell}
-          handleCancel={closeWellForm}
-          handleCreate={handleCreateWell}
-          handleUpdate={handleUpdateWell}
         />
 
         {loading ? ( <Title>Loading</Title> ) : ( <Wells
@@ -196,13 +188,6 @@ export default function Home() {
         <WellDataTable
           wellData={wellData}
           well = {activeWell}
-        />
-
-        <WellDataForm
-          well={activeWell}
-          isModalOpen= {isModalOpenData}
-          handleCancel={closeDataForm}
-          handleCreate={handleCreateWellData}
         />
 
         <Segmented
@@ -232,6 +217,24 @@ export default function Home() {
         />
         <ZoomInOutlined />
 
+        <OpenWellForm
+          mode = {mode}
+          value={valueWell}
+          isModalOpen = {isModalOpenWell}
+          handleCancel={closeWellForm}
+          handleCreate={handleCreateWell}
+          handleUpdate={handleUpdateWell}
+        />
+
+        <WellDataForm
+          well={activeWell}
+          isModalOpen= {isModalOpenData}
+          handleCancel={closeDataForm}
+          handleCreate={handleCreateWellData}
+        />    
+
     </div>
+
+    
   );
 }

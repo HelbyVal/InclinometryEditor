@@ -22,7 +22,6 @@ export interface WellRequest {
 
 export const GetWells = async (token: string | undefined) => {
     const response = await fetch("http://localhost:5021/GetWells", {
-        //mode: "no-cors",
         method: "GET",
         headers: {
             "content-type": "application/json",

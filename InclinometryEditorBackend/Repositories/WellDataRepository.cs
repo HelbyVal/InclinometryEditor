@@ -10,7 +10,7 @@ namespace InclinometryEditorBackend.Repositories
         {
         }
 
-        public async Task<List<WellData>> Get(Guid WellId, int UserId)
+        public async Task<List<WellData>> Get(Guid WellId, string UserId)
         {
             using (var _dbContext = new InclinometryDBContext())
             {
@@ -72,7 +72,7 @@ namespace InclinometryEditorBackend.Repositories
             }
         }
 
-        public async Task<WellData?> GetLast(Guid WellId, int userId)
+        public async Task<WellData?> GetLast(Guid WellId, string userId)
         {
             using (var _dbContext = new InclinometryDBContext())
             {
@@ -116,7 +116,7 @@ namespace InclinometryEditorBackend.Repositories
             }
         }
 
-        internal async Task<Guid> DeleteLast(int userId, Guid wellId)
+        internal async Task<Guid> DeleteLast(string userId, Guid wellId)
         {
             using (var _dbContext = new InclinometryDBContext())
             {

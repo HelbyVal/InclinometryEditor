@@ -6,7 +6,7 @@ namespace InclinometryEditorBackend.Entities
     public class WellDataEntity
     {
         public Guid Id { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public Guid WellEntityId { get; set; }
         public int Num {  get; set; }
         public double MD { get; set; }

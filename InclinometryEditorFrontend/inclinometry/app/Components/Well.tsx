@@ -1,3 +1,5 @@
+
+import "../page.module.css";
 import Button from "antd/es/button/button"
 import { WellModel } from "../Models/WellModel";
 import Card from "antd/es/card/Card";
@@ -15,7 +17,8 @@ export const Wells = ({wells, handleOpen, handleDelete, handleActivate}: Props) 
         <div className="Card">
             {
                 wells.map((well : WellModel) => (
-                    <Card style = {{width: 300}}
+                    <Card className = "card"
+                          style = {{width: 300}}
                           key = {well.id}
                           title= {well.title}
                           actions={

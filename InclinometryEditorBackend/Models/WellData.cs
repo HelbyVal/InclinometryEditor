@@ -10,7 +10,7 @@ namespace InclinometryEditorBackend.Models
 {
     public class WellData
     {
-        public int UserId { get; }
+        public string UserId { get; }
         public Guid WellId { get; }
         public Guid Id { get; }
         public int Num { get; } 
@@ -27,7 +27,7 @@ namespace InclinometryEditorBackend.Models
 
         public WellData(Guid Id,
                         Guid WellId,
-                        int UserId,
+                        string UserId,
                         int Num,
                         double MD,
                         double Inclination,
@@ -56,12 +56,12 @@ namespace InclinometryEditorBackend.Models
             this.X = X;
         }
 
-        public static WellData CreateFirst(int userId, Guid wellId)
+        public static WellData CreateFirst(string userId, Guid wellId)
         {
             return new WellData(Guid.NewGuid(), wellId, userId, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         }
 
-        public static WellData Create(int userId, Guid wellId ,double Inclination, double Azimut, double Md, WellData prevWellData)
+        public static WellData Create(string userId, Guid wellId ,double Inclination, double Azimut, double Md, WellData prevWellData)
         {
             double Z = Cos(Inclination);
             double Y = Sin(Inclination) * Cos(Azimut);

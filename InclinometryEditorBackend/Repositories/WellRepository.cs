@@ -12,7 +12,7 @@ namespace InclinometryEditorBackend.Repositories
         {
         }
 
-        public async Task<List<Well>> Get(int userId)
+        public async Task<List<Well>> Get(string userId)
         {
             using (var _dbContext = new InclinometryDBContext()) {
                 var WellEntities = await _dbContext.Wells.Where(x => x.UserId == userId)
@@ -38,7 +38,7 @@ namespace InclinometryEditorBackend.Repositories
             }
         }
 
-        public async Task<Well> Update(Guid idWell, string title, string description, DateOnly createDate, int UserId)
+        public async Task<Well> Update(Guid idWell, string title, string description, DateOnly createDate, string UserId)
         {
             using (var _dbContext = new InclinometryDBContext())
             {
@@ -58,7 +58,7 @@ namespace InclinometryEditorBackend.Repositories
             }
         }
 
-        internal async Task<Guid> Delete(Guid wellId, int userId)
+        internal async Task<Guid> Delete(Guid wellId, string userId)
         {
             using (var _dbContext = new InclinometryDBContext())
             {

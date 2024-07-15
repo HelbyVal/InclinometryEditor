@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\controllers\\wellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\wellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\controllers\\welldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\welldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\inclinometrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:inclinometrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\models\\welldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:models\\welldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\inclinometryeditor\\inclinometryeditorbackend\\repositories\\welldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:repositories\\welldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\services\\wellservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:services\\wellservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\repositories\\wellrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:repositories\\wellrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\entities\\wellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:entities\\wellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\entities\\welldataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:entities\\welldataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\models\\well.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:models\\well.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\repositories\\welldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:repositories\\welldatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\services\\welldataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:services\\welldataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\contracts\\welldataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:contracts\\welldataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\controllers\\welldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\welldatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|c:\\users\\\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\inclinometryeditor\\inclinometryeditorbackend\\controllers\\wellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\wellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\services\\wellservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:services\\wellservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\models\\welldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:models\\welldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\contracts\\wellrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,12 +59,16 @@
       "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:contracts\\wellresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\models\\well.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:models\\well.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\entities\\wellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:entities\\wellentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\inclinometrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:inclinometrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\contracts\\welldataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:contracts\\welldataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\contracts\\welldatarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\entities\\welldataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|solutionrelative:entities\\welldataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E32A0A26-9FC6-4C3E-82EB-43D90A2E66A6}|InclinometryEditorBackend.csproj|C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,46 +102,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAACMAAABDAAAA",
+              "DocumentIndex": 7,
+              "Title": "WellDataController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellDataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WellDataController.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellDataController.cs*",
+              "RelativeToolTip": "Controllers\\WellDataController.cs*",
+              "ViewState": "AQIAABQAAAAAAAAAAAAnwCMAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:06:03.608Z",
+              "WhenOpened": "2024-07-09T09:49:05.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "Well.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\Well.cs",
+              "RelativeDocumentMoniker": "Models\\Well.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\Well.cs*",
+              "RelativeToolTip": "Models\\Well.cs*",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T11:16:49.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WellDataService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellDataService.cs",
+              "RelativeDocumentMoniker": "Services\\WellDataService.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellDataService.cs*",
+              "RelativeToolTip": "Services\\WellDataService.cs*",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAnwBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T18:13:58.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WellDataRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellDataRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\WellDataRepository.cs",
               "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellDataRepository.cs",
               "RelativeToolTip": "Repositories\\WellDataRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T14:33:25.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InclinometryDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\InclinometryDBContext.cs",
-              "RelativeDocumentMoniker": "InclinometryDBContext.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\InclinometryDBContext.cs",
-              "RelativeToolTip": "InclinometryDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "DocumentIndex": 3,
+              "Title": "WellDataEntity.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellDataEntity.cs",
+              "RelativeDocumentMoniker": "Entities\\WellDataEntity.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellDataEntity.cs*",
+              "RelativeToolTip": "Entities\\WellDataEntity.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:27:40.515Z",
+              "WhenOpened": "2024-07-08T14:45:49.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "WellEntity.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellEntity.cs",
+              "RelativeDocumentMoniker": "Entities\\WellEntity.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellEntity.cs*",
+              "RelativeToolTip": "Entities\\WellEntity.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T11:23:52.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WellRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\WellRepository.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellRepository.cs*",
+              "RelativeToolTip": "Repositories\\WellRepository.cs*",
+              "ViewState": "AQIAABkAAAAAAAAAAAAnwCgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T13:32:04.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T11:06:03.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WellController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WellController.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellController.cs*",
+              "RelativeToolTip": "Controllers\\WellController.cs*",
+              "ViewState": "AQIAAB8AAAAAAAAAAIA6wDcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T17:15:04.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WellService.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellService.cs",
+              "RelativeDocumentMoniker": "Services\\WellService.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellService.cs*",
+              "RelativeToolTip": "Services\\WellService.cs*",
+              "ViewState": "AQIAABsAAAAAAAAAAAAnwCoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T15:42:30.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WellData.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\WellData.cs",
+              "RelativeDocumentMoniker": "Models\\WellData.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\WellData.cs*",
+              "RelativeToolTip": "Models\\WellData.cs*",
+              "ViewState": "AQIAAAQAAAAAAAAAAADgvw0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T11:43:17.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -150,97 +254,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T11:03:27.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WellController.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WellController.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellController.cs",
-              "RelativeToolTip": "Controllers\\WellController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T17:15:04.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-08T11:03:47.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WellDataController.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellDataController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WellDataController.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Controllers\\WellDataController.cs",
-              "RelativeToolTip": "Controllers\\WellDataController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:49:05.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WellData.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\WellData.cs",
-              "RelativeDocumentMoniker": "Models\\WellData.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\WellData.cs",
-              "RelativeToolTip": "Models\\WellData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:43:17.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WellService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellService.cs",
-              "RelativeDocumentMoniker": "Services\\WellService.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellService.cs",
-              "RelativeToolTip": "Services\\WellService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T15:42:30.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WellRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\WellRepository.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Repositories\\WellRepository.cs",
-              "RelativeToolTip": "Repositories\\WellRepository.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAkwAoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T13:32:04.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WellDataService.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellDataService.cs",
-              "RelativeDocumentMoniker": "Services\\WellDataService.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Services\\WellDataService.cs",
-              "RelativeToolTip": "Services\\WellDataService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T18:13:58.202Z",
               "EditorCaption": ""
             },
             {
@@ -254,19 +267,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T17:20:21.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WellDataResponse.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Contracts\\WellDataResponse.cs",
-              "RelativeDocumentMoniker": "Contracts\\WellDataResponse.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Contracts\\WellDataResponse.cs",
-              "RelativeToolTip": "Contracts\\WellDataResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:54:24.714Z",
               "EditorCaption": ""
             },
             {
@@ -285,32 +285,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Well.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\Well.cs",
-              "RelativeDocumentMoniker": "Models\\Well.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\Well.cs",
-              "RelativeToolTip": "Models\\Well.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:16:49.207Z",
-              "EditorCaption": ""
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-08T11:03:47.359Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "WellEntity.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellEntity.cs",
-              "RelativeDocumentMoniker": "Entities\\WellEntity.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellEntity.cs",
-              "RelativeToolTip": "Entities\\WellEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Title": "InclinometryDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\InclinometryDBContext.cs",
+              "RelativeDocumentMoniker": "InclinometryDBContext.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\InclinometryDBContext.cs",
+              "RelativeToolTip": "InclinometryDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:23:52.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T11:27:40.515Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "WellDataResponse.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Contracts\\WellDataResponse.cs",
+              "RelativeDocumentMoniker": "Contracts\\WellDataResponse.cs",
+              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Contracts\\WellDataResponse.cs",
+              "RelativeToolTip": "Contracts\\WellDataResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T09:54:24.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "WellDataRequest.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Contracts\\WellDataRequest.cs",
               "RelativeDocumentMoniker": "Contracts\\WellDataRequest.cs",
@@ -318,12 +328,11 @@
               "RelativeToolTip": "Contracts\\WellDataRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:51:53.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T09:51:53.712Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -331,21 +340,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T11:06:26.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "WellDataEntity.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellDataEntity.cs",
-              "RelativeDocumentMoniker": "Entities\\WellDataEntity.cs",
-              "ToolTip": "C:\\Users\\\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\\source\\repos\\InclinometryEditor\\InclinometryEditorBackend\\Entities\\WellDataEntity.cs",
-              "RelativeToolTip": "Entities\\WellDataEntity.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T14:45:49.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T11:06:26.285Z"
             },
             {
               "$type": "Document",
@@ -357,8 +352,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-08T11:03:51.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T11:03:51.715Z"
             }
           ]
         }
