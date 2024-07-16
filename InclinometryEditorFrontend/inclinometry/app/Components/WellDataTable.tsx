@@ -55,6 +55,7 @@ const colums =
     <div className="Table">
         <h2>{tlt}</h2>
         <Table 
+            scroll = {{y: 300}}
             columns = {colums}
             dataSource = {wellData}
             pagination = {false}

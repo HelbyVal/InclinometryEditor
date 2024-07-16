@@ -104,6 +104,9 @@ export const MyChart = ({wellData, mode, scale} : Props) => {
 
     return(
         <Scatter 
+            style={{
+                padding: 50
+            }}
             data = {{
                 labels: wellData.map((d) => d.dE),
                 datasets: [

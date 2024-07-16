@@ -38,7 +38,7 @@ namespace InclinometryEditorBackend.Controllers
 
         string GetUser()
         {
-            return User.Claims.ToList().Where(x => x.Type == "sid").Select(x => x.Value).FirstOrDefault();
+            return User.Claims.ToList().Where(x => x.Type == "preferred_username").Select(x => x.Value).FirstOrDefault();
         }
 
     }

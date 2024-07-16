@@ -24,9 +24,6 @@ builder.Services.AddAuthentication()
                         x.Authority = "http://localhost:8080/realms/InclinometryAuth";
                         x.RequireHttpsMetadata = false;
                         x.MetadataAddress = $"http://localhost:8080/realms/InclinometryAuth/.well-known/openid-configuration";
-                        //x.TokenValidationParameters = new TokenValidationParameters{
-                        //    NameClaimType = $"{configuration["Keycloak:name_claim"]}",
-                        //}
 
                         x.TokenValidationParameters = new TokenValidationParameters
                         {
@@ -103,8 +100,8 @@ app.MapControllerRoute(
 app.MapControllers();
 
 
-var db = new InclinometryDBContext();
-db.Database.EnsureDeleted();
-db.Database.EnsureCreated();
+//var db = new InclinometryDBContext();
+//db.Database.EnsureDeleted();
+//db.Database.EnsureCreated();
 
 app.Run();

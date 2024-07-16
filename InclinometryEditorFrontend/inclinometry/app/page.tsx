@@ -27,10 +27,11 @@ import { WellDataModel, defaultData } from './Models/WellDataModel';
 import { AddWellData, GetWellData, WellDataRequest, DeleteWellData } from './Services/WellDataService';
 import { WellDataTable } from './Components/WellDataTable';
 import { WellDataForm } from './Components/WellDataForm';
-import { CloseOutlined, PlusOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
+import { CloseOutlined, FlagFilled, PlusOutlined, ZoomInOutlined, ZoomOutOutlined } from '@ant-design/icons';
 import { ChartMode, MyChart } from './Components/Chart';
 import Segmented from 'antd/es/segmented';
-import { Slider, SliderSingleProps } from 'antd';
+import { Slider, SliderSingleProps, Flex, Col, Row } from 'antd';
+import { Header } from 'antd/es/layout/layout';
 
 
 export default function Home() {
@@ -58,14 +59,11 @@ export default function Home() {
 
   useEffect(() => {
     if (!initialized) {
-      console.log(keycloak.token);
-      
       return;
     }
 
     if (!keycloak.authenticated) {    
-      keycloak.login();
-      
+      keycloak.login();   
     } 
 
     const getWells = async () => {
@@ -158,64 +156,95 @@ export default function Home() {
 
   return (
 
-    <div className = "rowws">
+    <div>
+
+      <Header>
+        <Button
+                type = "primary"
+                onClick = {() => {
+                  keycloak.logout();
+                }}
+                danger
+              >
+              Выйти
+        </Button>
+      </Header>
+
+      <Row>
+        <Col span = {5}>
+          <Flex vertical = {true}>
+            <Flex gap = {61} vertical = {false}>
+              <h1 className='header'>
+                Скважины
+              </h1>
+                <Button
+                type="primary"
+                onClick = {openWellForm}
+              >Добавить</Button>
+            </Flex>
+
+            {loading ? ( <Title>Loading</Title> ) : ( <Wells
+              wells = {wells}
+              handleDelete={handleDeleteWell}
+              handleOpen={openModalWellEdit}
+              handleActivate={handleActivateWell}
+              />
+              )}
+          </Flex>
+        </Col>
+          <Col span = {19}>
+            <Button
+              icon = {<PlusOutlined />}
+              onClick = {OpenWellDataForm}
+              disabled = {activeWell.id == defaultWell.id}
+            />
+            <Button
+              icon = {<CloseOutlined />}
+              onClick = {handleDeleteWellData}
+              disabled = {activeWell.id == defaultWell.id || wellData.length == 1}
+              danger
+            />
+            <WellDataTable
+              wellData={wellData}
+              well = {activeWell}
+            />
+          </Col>
+      </Row>
+          
+
+
 
       
-        <Button
-          icon = {<PlusOutlined />}
-          onClick = {openWellForm}
-        />
-
-        {loading ? ( <Title>Loading</Title> ) : ( <Wells
-          wells = {wells}
-          handleDelete={handleDeleteWell}
-          handleOpen={openModalWellEdit}
-          handleActivate={handleActivateWell}
+          
+          <Segmented
+            options={['Вертикальное представление', 'Горизонтальное представление']}
+            onChange={(value: string) => {
+              if (value == 'Вертикальное представление') {
+                setChartMode(ChartMode.Vertical);
+              }
+              else if (value == 'Горизонтальное представление') {
+                setChartMode(ChartMode.Horizontal);
+              }
+            }}
           />
-          )}
+          <MyChart
+            wellData={wellData}
+            mode={chartMode}
+            scale={chartScale}
+          />
 
-        <Button
-          icon = {<PlusOutlined />}
-          onClick = {OpenWellDataForm}
-          disabled = {activeWell.id == defaultWell.id}
-        />
-        <Button
-          icon = {<CloseOutlined />}
-          onClick = {handleDeleteWellData}
-          disabled = {activeWell.id == defaultWell.id || wellData.length == 1}
-          danger
-        />
-        <WellDataTable
-          wellData={wellData}
-          well = {activeWell}
-        />
+            <Row>
+            <Col span = {23}>
+              <Slider
+                tooltip = {{ formatter }}
+                onChange = {(value: number) => {
+                  setChartScale(value)
+                }}   
+              />
+            </Col>
+            <Col span = {1}><ZoomInOutlined /></Col>
+            </Row>
 
-        <Segmented
-          options={['Вертикальное представление', 'Горизонтальное представление']}
-          onChange={(value: string) => {
-            if (value == 'Вертикальное представление') {
-              setChartMode(ChartMode.Vertical);
-            }
-            else if (value == 'Горизонтальное представление') {
-              setChartMode(ChartMode.Horizontal);
-            }
-          }}
-        />
-
-        <MyChart
-          wellData={wellData}
-          mode={chartMode}
-          scale={chartScale}
-        />
-
-        <ZoomOutOutlined />
-        <Slider
-          tooltip = {{ formatter }}
-          onChange = {(value: number) => {
-            setChartScale(value)
-          }}   
-        />
-        <ZoomInOutlined />
 
         <OpenWellForm
           mode = {mode}
